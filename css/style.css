@@ -13,14 +13,13 @@ a {
     background-image: url("../img/bernabeu.png");
     background-attachment: fixed;
     background-size: cover;
-    height: 120vh;
+    height: 80vh;
     position: relative;
 }
 .h1header {
     color: white;
     margin-left: 2rem;
 }
-
 .OscurecerFondo {
     position: absolute;
     width: 100%;
@@ -37,8 +36,8 @@ a {
     width: 100%;
     background-color: rgba(128, 128, 128, 0.456);
     position: fixed;
+    cursor: pointer;
     }
-
 .indice {
     color: white;
     font-size: 25px;
@@ -52,4 +51,68 @@ a {
     flex-wrap: wrap;
     margin: 0 .3rem;
     gap: 5rem;
+}
+.contenedorInferior {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 70vh;
+}
+.parrafoHeader {
+    color: #ffffff;
+    width: 25rem;
+    background-attachment: fixed;
+    background-color: rgba(178, 194, 206, 0.71);
+    font-weight: bolder;
+}
+.btnHeader {
+    width: 15rem;
+    border: none;
+    padding: 1.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+
+/* Estilos Main */
+.MainIndex {
+    background-image: url("../img/anfield.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
+}
+
+.camisetas {
+    height: 80vh;
+    width: 50vh;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 100px;
+}
+.carousel-inner {
+    height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+.titulos {
+text-align: center;
+}
+
+/* Estilos Footer */
+.FooterIndex {
+    background-image: url("../img/bombonera.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80vh;
+    position: relative;
 }
