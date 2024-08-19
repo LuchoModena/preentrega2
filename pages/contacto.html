@@ -38,6 +38,31 @@
     </header>
     <main class="MainOtro">
         <div class="OscurecerFondo">
+          <section>
+            <form>
+            <fieldset>
+              <legend>Complete el formulario de consulta</legend>
+            <ul>
+              <li> <label for="name">Nombre</label>
+                <input placeholder="Ingrese su nombre" type="text" id="name"></li>
+              <li> <label for="surname">Apellido</label>
+                <input placeholder="Ingrese su apellido" type="text" id="surname"></li>
+              <li> <label for="email">Email</label>
+                <input placeholder="Ingrese su email" type="email" id="surname"></li>
+              <li><label for="option">Motivo de comunicación</label>
+                <select>
+                  <option value="socio">Quiero hacer un encargo</option>
+                  <option value="consulta">Tengo una consulta</option>
+                  <option value="reserva">Quiero reservar un producto</option>
+                  <option value="cambio_sede">Quiero hacer una compra por mayor</option>
+                  <option value="cambio_membresia">Quiero vender mis camisetas</option>
+                </select></li>
+            <li><textarea placeholder="Ingrese su mensaje" name="msj" id="msj"></textarea></li>
+            <li><input type="submit" value="Enviar" id="envio"></li>
+          </ul>
+          </form>
+          </fieldset>
+          </section>
         </main>
         <footer class="FooterOtro">
           <div class="OscurecerFondo"></div>
