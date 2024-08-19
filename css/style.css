@@ -244,7 +244,15 @@ input[type=checkbox], input[type=submit]  {
         flex-wrap: wrap;
         gap: 0;
         max-width: 576px;
+        gap: 0;
+        padding: 0;
+        align-items:end;
     }
+
+.indice a, h1{
+    color: rgb(255, 255, 255) !important;
+}
+
     .ContenedorFooter {
         flex-wrap: wrap;
         gap: 0;
