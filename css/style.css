@@ -39,33 +39,34 @@ a {
     cursor: pointer;
     }
 .indice {
-    color: white;
-    font-size: 25px;
     text-align: center;
-    text-decoration: none;
     list-style:none;
     display: flex;
     justify-content: space-between;
     gap: 1rem;
     padding-right: 100px;
-    flex-wrap: wrap;
     margin: 0 .3rem;
     gap: 5rem;
 }
+.indice a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+
+}
 .contenedorInferior {
     display: flex;
-    flex-direction: column;
+    flex-direction:row;
     justify-content: center;
     align-items: center;
-    width: 30rem;
-    height: 70vh;
+    width: 100%;
+    height: 100%;
+    gap: 10rem;
 }
 .parrafoHeader {
     color: #ffffff;
-    width: 25rem;
-    background-attachment: fixed;
+    font-size: 25px;    background-attachment: fixed;
     background-color: rgba(178, 194, 206, 0.71);
-    font-weight: bolder;
 }
 .btnHeader {
     width: 15rem;
@@ -113,6 +114,74 @@ text-align: center;
     background-image: url("../img/bombonera.jpg");
     background-attachment: fixed;
     background-size: cover;
-    height: 80vh;
+    height: 60vh;
+    position: relative;
+}
+.direccion {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.893);
+}
+.info img {
+    width: 70rem;
+    height: 100%;
+}
+
+.ContenedorFooter {
+    display: flex;
+    justify-content:center;
+    margin: 0;
+    padding: 0;
+    gap: 4rem;
+    height: 90%;
+}
+.venta {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.boton {
+background-color: #171717;
+color: #ffffff;
+padding: 1rem 3rem;
+margin-top: 1rem;
+font-size: 1.5rem;
+text-decoration: none;
+font-weight: bold;
+border-radius: 5rem;
+width: 90%;
+text-align: center;
+border: none;
+position: relative;
+}
+.invitacion {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.881);
+    font-size: 30px;
+}
+
+/* Estructuras otros htmls*/
+
+.HeaderOtro {
+    background-image: url("../img/bernabeu.png");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 40vh;
+    position: relative;
+}
+.MainOtro {
+    background-image: url("../img/anfield.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 40vh;
+    position: relative;
+}
+.FooterOtro {
+    background-image: url("../img/bombonera.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 20vh;
     position: relative;
 }
