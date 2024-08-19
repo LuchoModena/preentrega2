@@ -15,7 +15,7 @@ a {
     position: relative;
 }
 .h1header {
-    color: white;
+    color: rgb(0, 0, 0);
     margin-left: 2rem;
 }
 .OscurecerFondo {
@@ -28,11 +28,12 @@ a {
     display: flex;
     justify-content:center;
     align-items: center;
-    gap: 20rem;
+    gap: 5rem;
     padding: 0;
     margin: 0;
+    height: 10%;
     width: 100%;
-    background-color: rgba(128, 128, 128, 0.456);
+    background-color: rgba(255, 255, 255, 0.359);
     position: fixed;
     cursor: pointer;
     }
@@ -41,15 +42,15 @@ a {
     list-style:none;
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 2rem;
+    padding: 0 !important;
     padding-right: 100px;
-    margin: 0 .3rem;
-    gap: 5rem;
+    font-weight: bolder;
 }
 .indice a{
     text-decoration: none;
-    color: white;
-    font-size: 25px;
+    color: rgb(0, 0, 0) !important;
+    font-size: 20px;
 
 }
 .contenedorInferior {
@@ -63,7 +64,9 @@ a {
 }
 .parrafoHeader {
     color: #ffffff;
-    font-size: 25px;    background-attachment: fixed;
+    font-size: 20px;    background-attachment: fixed;
+    margin-left: 10px;
+    margin-right: 10px;
     background-color: rgba(178, 194, 206, 0.71);
 }
 .btnHeader {
@@ -93,7 +96,7 @@ a {
     right: 0;
     margin: auto;
     border: 3px solid rgb(0, 0, 0);
-    border-radius: 100px;
+    border-radius: 50px;
 }
 .carousel-inner {
     height: 50vh;
@@ -115,9 +118,12 @@ text-align: center;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.893);
 }
-.info img {
-    width: 70rem;
+.info {
     height: 100%;
+}
+.info img {
+    width: 35rem;
+    height: 90%;
 }
 .ContenedorFooter {
     display: flex;
@@ -159,8 +165,8 @@ position: relative;
     background-image: url("../img/bernabeu.png");
     background-attachment: fixed;
     background-size: cover;
-    height: 10vh;
-    position: relative;
+    height: 20vh;
+    position: sticky;
 }
 .MainOtro {
     background-image: url("../img/anfield.jpg");
@@ -173,7 +179,7 @@ position: relative;
     background-image: url("../img/bombonera.jpg");
     background-attachment: fixed;
     background-size: cover;
-    height: 20vh;
+    height: 22vh;
     position: relative;
 }
 /* FORM */
@@ -196,7 +202,7 @@ input {
 }
 textarea {
 width: 90%;
-height: 200px;
+height: 50px;
 background-color: #BEBEBE;
 padding: 5px;
 }
@@ -213,12 +219,13 @@ input[type=checkbox], input[type=submit]  {
     background-color: rgb(240, 240, 240);
     width: 20rem;
     border: 2px solid #000;
+    font-size: 12px;
 }
 .unidad img {
     width: 100%;
 }
 .unidad h3 {
-    margin-bottom:1.5rem;
+    margin-bottom:.5rem;
     text-align: center;
 }
 .ContenedorFlex {
@@ -228,28 +235,55 @@ input[type=checkbox], input[type=submit]  {
     padding: 3rem;
 }
 .accordion {
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /* Para pantallas de hasta 576px (disp móviles) */
 @media (max-width: 576px) {
-    .ContenedorSup, .ContenedorFlex, .contenedorInferior, .ContenedorFooter, .indice {
-        flex-direction: column;
-        flex-wrap:wrap;
-        justify-content: start;
-        text-align: center;
-        max-width: 570px;
-        margin: 0;
-        list-style: none;
+    .contenedorInferior {
+        flex-wrap: wrap;
+        gap: 0;
+        max-width: 576px;
+    }
+    .ContenedorFooter {
+        flex-wrap: wrap;
+        gap: 0;
+        max-width: 576px;
+    }
+    .ContenedorSup {
+        flex-wrap: wrap;
+        gap: 0;
+        max-width: 576px;
+    }
+    .ContenedorFlex {
+        flex-wrap: wrap;
+        gap: 0;
+        max-width: 576px;
     }
 
 }
 /* Para pantallas de 577px hasta 767px (tablets) */
 @media (min-width: 577px) and (max-width: 767px) {
-    .ContenedorSup, .ContenedorFlex, .contenedorInferior, .ContenedorFooter {
-        max-width: 720px;
+    .contenedorInferior {
+        flex-wrap: wrap;
+        gap: 0;
+        max-width: 767px;
     }
- 
-/* Para pantallas de 768px o más (desktops) */
-@media (min-width: 768px) {
+    .ContenedorFooter {
+        flex-wrap: wrap;
+        gap: 0;
+        max-width:767px;
     }
+    .ContenedorSup {
+        flex-wrap: wrap;
+        gap: 0 ;
+        max-width: 767px;
+        position: relative;
+    }
+    .ContenedorFlex {
+        flex-wrap: wrap;
+        gap: 0;
+        max-width: 767px;
+    }
+
+  }
