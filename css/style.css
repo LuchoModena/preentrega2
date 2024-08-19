@@ -230,3 +230,26 @@ input[type=checkbox], input[type=submit]  {
 .accordion {
     font-size: 20px;
 }
+
+/* Para pantallas de hasta 576px (disp móviles) */
+@media (max-width: 576px) {
+    .ContenedorSup, .ContenedorFlex, .contenedorInferior, .ContenedorFooter, .indice {
+        flex-direction: column;
+        flex-wrap:wrap;
+        justify-content: start;
+        text-align: center;
+        max-width: 570px;
+        margin: 0;
+        list-style: none;
+    }
+
+}
+/* Para pantallas de 577px hasta 767px (tablets) */
+@media (min-width: 577px) and (max-width: 767px) {
+    .ContenedorSup, .ContenedorFlex, .contenedorInferior, .ContenedorFooter {
+        max-width: 720px;
+    }
+ 
+/* Para pantallas de 768px o más (desktops) */
+@media (min-width: 768px) {
+    }
